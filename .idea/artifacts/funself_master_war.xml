@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="funself-master:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="funself-parent-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="funself-master:war exploded" />
+    </root>
+  </artifact>
+</component>

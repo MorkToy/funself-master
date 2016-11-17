@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/funself-api/funself-api.iml" filepath="$PROJECT_DIR$/funself-api/funself-api.iml" />
+      <module fileurl="file://E://funself-master/funself-master.iml" filepath="E://funself-master/funself-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/funself-parent.iml" filepath="$PROJECT_DIR$/funself-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/funself-web/funself-web.iml" filepath="$PROJECT_DIR$/funself-web/funself-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/funself-web/funself_web.iml" filepath="$PROJECT_DIR$/funself-web/funself_web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/funserf-service/funserf-service.iml" filepath="$PROJECT_DIR$/funserf-service/funserf-service.iml" />
+    </modules>
+  </component>
+</project>

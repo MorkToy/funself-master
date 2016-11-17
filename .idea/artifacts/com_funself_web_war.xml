@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="com.funself.web:war">
+    <output-path>$PROJECT_DIR$/funself_web/target</output-path>
+    <root id="archive" name="funself-web.war">
+      <element id="artifact" artifact-name="com.funself.web:war exploded" />
+    </root>
+  </artifact>
+</component>
