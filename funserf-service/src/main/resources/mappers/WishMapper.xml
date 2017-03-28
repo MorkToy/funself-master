@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.onelife.fun.dao.WishMapper" >
+  <resultMap id="BaseResultMap" type="com.onelife.fun.entity.Wish" >
+    <id column="wish_id" property="wishId" jdbcType="INTEGER" />
+    <result column="user_id" property="userId" jdbcType="INTEGER" />
+    <result column="wish_content" property="wishContent" jdbcType="VARCHAR" />
+    <result column="wish_declare" property="wishDeclare" jdbcType="VARCHAR" />
+    <result column="wechat_name" property="wechatName" jdbcType="VARCHAR" />
+    <result column="publish_time" property="publishTime" jdbcType="TIMESTAMP" />
+    <result column="wish_status" property="wishStatus" jdbcType="TINYINT" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    wish_id, user_id, wish_content, wish_declare, wechat_name, publish_time, wish_status
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.onelife.fun.entity.WishExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from wish
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from wish
+    where wish_id = #{wishId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from wish
+    where wish_id = #{wishId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.onelife.fun.entity.Wish" >
+    insert into wish (wish_id, user_id, wish_content, 
+      wish_declare, wechat_name, publish_time, 
+      wish_status)
+    values (#{wishId,jdbcType=INTEGER}, #{userId,jdbcType=INTEGER}, #{wishContent,jdbcType=VARCHAR}, 
+      #{wishDeclare,jdbcType=VARCHAR}, #{wechatName,jdbcType=VARCHAR}, #{publishTime,jdbcType=TIMESTAMP}, 
+      #{wishStatus,jdbcType=TINYINT})
+  </insert>
+  <insert id="insertSelective" parameterType="com.onelife.fun.entity.Wish" >
+    insert into wish
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="wishId != null" >
+        wish_id,
+      </if>
+      <if test="userId != null" >
+        user_id,
+      </if>
+      <if test="wishContent != null" >
+        wish_content,
+      </if>
+      <if test="wishDeclare != null" >
+        wish_declare,
+      </if>
+      <if test="wechatName != null" >
+        wechat_name,
+      </if>
+      <if test="publishTime != null" >
+        publish_time,
+      </if>
+      <if test="wishStatus != null" >
+        wish_status,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="wishId != null" >
+        #{wishId,jdbcType=INTEGER},
+      </if>
+      <if test="userId != null" >
+        #{userId,jdbcType=INTEGER},
+      </if>
+      <if test="wishContent != null" >
+        #{wishContent,jdbcType=VARCHAR},
+      </if>
+      <if test="wishDeclare != null" >
+        #{wishDeclare,jdbcType=VARCHAR},
+      </if>
+      <if test="wechatName != null" >
+        #{wechatName,jdbcType=VARCHAR},
+      </if>
+      <if test="publishTime != null" >
+        #{publishTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="wishStatus != null" >
+        #{wishStatus,jdbcType=TINYINT},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.onelife.fun.entity.WishExample" resultType="java.lang.Integer" >
+    select count(*) from wish
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update wish
+    <set >
+      <if test="record.wishId != null" >
+        wish_id = #{record.wishId,jdbcType=INTEGER},
+      </if>
+      <if test="record.userId != null" >
+        user_id = #{record.userId,jdbcType=INTEGER},
+      </if>
+      <if test="record.wishContent != null" >
+        wish_content = #{record.wishContent,jdbcType=VARCHAR},
+      </if>
+      <if test="record.wishDeclare != null" >
+        wish_declare = #{record.wishDeclare,jdbcType=VARCHAR},
+      </if>
+      <if test="record.wechatName != null" >
+        wechat_name = #{record.wechatName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.publishTime != null" >
+        publish_time = #{record.publishTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.wishStatus != null" >
+        wish_status = #{record.wishStatus,jdbcType=TINYINT},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update wish
+    set wish_id = #{record.wishId,jdbcType=INTEGER},
+      user_id = #{record.userId,jdbcType=INTEGER},
+      wish_content = #{record.wishContent,jdbcType=VARCHAR},
+      wish_declare = #{record.wishDeclare,jdbcType=VARCHAR},
+      wechat_name = #{record.wechatName,jdbcType=VARCHAR},
+      publish_time = #{record.publishTime,jdbcType=TIMESTAMP},
+      wish_status = #{record.wishStatus,jdbcType=TINYINT}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.onelife.fun.entity.Wish" >
+    update wish
+    <set >
+      <if test="userId != null" >
+        user_id = #{userId,jdbcType=INTEGER},
+      </if>
+      <if test="wishContent != null" >
+        wish_content = #{wishContent,jdbcType=VARCHAR},
+      </if>
+      <if test="wishDeclare != null" >
+        wish_declare = #{wishDeclare,jdbcType=VARCHAR},
+      </if>
+      <if test="wechatName != null" >
+        wechat_name = #{wechatName,jdbcType=VARCHAR},
+      </if>
+      <if test="publishTime != null" >
+        publish_time = #{publishTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="wishStatus != null" >
+        wish_status = #{wishStatus,jdbcType=TINYINT},
+      </if>
+    </set>
+    where wish_id = #{wishId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.onelife.fun.entity.Wish" >
+    update wish
+    set user_id = #{userId,jdbcType=INTEGER},
+      wish_content = #{wishContent,jdbcType=VARCHAR},
+      wish_declare = #{wishDeclare,jdbcType=VARCHAR},
+      wechat_name = #{wechatName,jdbcType=VARCHAR},
+      publish_time = #{publishTime,jdbcType=TIMESTAMP},
+      wish_status = #{wishStatus,jdbcType=TINYINT}
+    where wish_id = #{wishId,jdbcType=INTEGER}
+  </update>
+</mapper>
