@@ -1,59 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="548e70c0-9db6-4bbd-b160-5ef48bd0385a" name="Default" comment="nothing">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_protostuff_protostuff_api_1_3_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_protostuff_protostuff_collectionschema_1_3_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_protostuff_protostuff_core_1_3_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_protostuff_protostuff_runtime_1_3_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_redis_1_6_2_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_4_1_9_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_4_1_6_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_2_7_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/funself-api/src/main/java/com/onelife/fun/cache/CacheService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/funself-api/src/main/java/com/onelife/fun/cache/CacheServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/funself-api/src/main/java/com/onelife/fun/db/DataSource.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/funself-api/src/main/java/com/onelife/fun/db/DataSourceChange.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/funself-api/src/main/java/com/onelife/fun/db/DataSourceHolder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/funself-api/src/main/java/com/onelife/fun/db/DyCreateDB.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/funself-api/src/main/java/com/onelife/fun/db/DynamicDataSource.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/funself-api/src/main/java/com/onelife/fun/db/MyBatisCachePlugIns.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/funself-api/src/main/java/com/onelife/fun/utils/MapWrapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/funself-api/src/main/java/com/onelife/fun/utils/ProtostuffSerializeUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/funself-api/src/main/resources/mybatis/mybatis-config.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/funself-api/src/main/resources/spring/spring-config-cache.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/funself-api/src/main/resources/spring/spring-config-redis.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/funself-api/src/main/resources/spring/spring-mvc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/funself-api/src/test/java/com/onelife/fun/ApiTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/funself-api/src/test/resources/db.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/funself-web/src/main/resources/config/db.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/funserf-service/src/main/java/com/onelife/fun/service/WishServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/funserf-service/src/main/resources/config/db.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/funserf-service/src/main/resources/mappers/AccountMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/funserf-service/src/main/resources/mappers/BiGenneratorConfig.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/funserf-service/src/main/resources/mappers/WishMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/funserf-service/src/test/java/com/onelife/fun/ApiTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/funserf-service/src/test/resources/config/db.properties" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/funself-api/src/main/resources/log4j2.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/funself-api/target/classes/log4j2.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/funserf-service/src/main/resources/log4j2.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/funserf-service/target/classes/log4j2.properties" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/funself-web/target/funself-web.war" afterPath="$PROJECT_DIR$/funself-web/target/funself-web.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/funself-web/target/funself-web/WEB-INF/lib/funself-api-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/funself-web/target/funself-web/WEB-INF/lib/funself-api-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/funself_web_war_exploded2.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/funself_web_war_exploded2.xml" />
+    <list default="true" id="548e70c0-9db6-4bbd-b160-5ef48bd0385a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/funself-api/funself-api.iml" afterPath="$PROJECT_DIR$/funself-api/funself-api.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/funself-api/pom.xml" afterPath="$PROJECT_DIR$/funself-api/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/funself-parent.iml" afterPath="$PROJECT_DIR$/funself-parent.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/funself-web/funself-web.iml" afterPath="$PROJECT_DIR$/funself-web/funself-web.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/funself-web/funself_web.iml" afterPath="$PROJECT_DIR$/funself-web/funself_web.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/funserf-service/funserf-service.iml" afterPath="$PROJECT_DIR$/funserf-service/funserf-service.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/funserf-service/pom.xml" afterPath="$PROJECT_DIR$/funserf-service/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
     </list>
     <ignored path="funself-master.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -121,12 +70,14 @@
       <file leaf-file-name="CacheServiceImpl.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/funself-api/src/main/java/com/onelife/fun/cache/CacheServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6443662">
-              <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.77816904">
+              <caret line="47" column="48" selection-start-line="47" selection-start-column="48" selection-end-line="47" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#936#937#0" expanded="true" />
                 <element signature="e#1003#1004#0" expanded="true" />
+                <element signature="e#1346#1715#0" expanded="true" />
+                <element signature="e#1714#1715#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -1080,7 +1031,7 @@
       <workItem from="1483088398240" duration="1250000" />
       <workItem from="1483954004545" duration="9308000" />
       <workItem from="1484017545774" duration="43668000" />
-      <workItem from="1490682571846" duration="212000" />
+      <workItem from="1490682571846" duration="486000" />
     </task>
     <task id="LOCAL-00001" summary="init version">
       <created>1479374917508</created>
@@ -1100,7 +1051,19 @@
       <option name="project" value="LOCAL" />
       <updated>1479695485091</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="nothing">
+      <created>1490682819207</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1490682819207</updated>
+    </task>
+    <task id="LOCAL-00005" summary="nothing">
+      <created>1490682938922</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1490682938922</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1136,14 +1099,15 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="110702000" />
+    <option name="totallyTimeSpent" value="110976000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1040" extended-state="0" />
-    <editor active="false" />
+    <frame x="0" y="0" width="1920" height="1040" extended-state="1" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46376812" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32552955" sideWeight="0.5021322" order="0" side_tool="true" content_ui="tabs" />
@@ -1167,7 +1131,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46376812" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1266,6 +1229,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1273,6 +1237,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1280,6 +1245,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1360,6 +1326,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.31666666">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1367,6 +1334,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1388,6 +1356,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1395,6 +1364,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-12.357142">
           <caret line="118" column="55" selection-start-line="118" selection-start-column="55" selection-end-line="118" selection-end-column="55" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1402,6 +1372,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-18.321428">
           <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1574,17 +1545,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.2846442">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/funself-api/src/main/java/com/onelife/fun/cache/CacheServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6443662">
-          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.77816904">
+          <caret line="47" column="48" selection-start-line="47" selection-start-column="48" selection-end-line="47" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#936#937#0" expanded="true" />
             <element signature="e#1003#1004#0" expanded="true" />
+            <element signature="e#1346#1715#0" expanded="true" />
+            <element signature="e#1714#1715#0" expanded="true" />
           </folding>
         </state>
       </provider>
